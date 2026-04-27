@@ -7,12 +7,6 @@ from giga import giga_stream
 
 app = FastAPI()
 
-
-async def get_data():
-    async with aiofiles.open("text.md", 'r', encoding='utf-8') as f:
-        return await f.read()
-
-
 @app.get("/", response_class=HTMLResponse)
 async def read_root():
     async with aiofiles.open("index.html", 'r') as f:
