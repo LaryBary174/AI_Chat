@@ -11,7 +11,7 @@
 
 3. В корне проекта создайте файл .env
    ```ini
-   AI_CREDENTIALS=your_api_key_here
+   AI_API_KEY=your_api_key_here
    ```
    Получить API ключ можно по [инструкции](https://developers.sber.ru/docs/ru/gigachat/quickstart/ind-create-project)
 
